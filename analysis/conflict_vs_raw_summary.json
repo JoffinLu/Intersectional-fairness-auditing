@@ -1,0 +1,9 @@
+{
+  "wins": 0,
+  "ties": 2,
+  "losses": 43,
+  "min_difference": -0.012499999999999956,
+  "max_difference": 0.0,
+  "mean_grid_difference": -0.004066666666666671,
+  "scope": "descriptive fixed grid, not a population probability or adjusted significance test"
+}

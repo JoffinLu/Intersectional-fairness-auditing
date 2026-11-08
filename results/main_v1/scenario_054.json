@@ -1,0 +1,13 @@
+{
+  "scenario_id": "scenario_054",
+  "family": "sparse_rare",
+  "groups": 64,
+  "target_n": 160,
+  "effect_above_margin": 0.3,
+  "target_group": 0,
+  "confirmation": 0.8,
+  "floor": 0.1,
+  "seed_spawn_key": [
+    54
+  ]
+}

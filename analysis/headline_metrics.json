@@ -1,0 +1,29 @@
+{
+  "main_scenarios": 60,
+  "main_repetitions": 2000,
+  "max_empirical_fwer_all_valid": 0.0015,
+  "max_empirical_fwer_full": 0.0005,
+  "sparse_conflict_vs_full": {
+    "wins": 31,
+    "ties": 2,
+    "losses": 12,
+    "total": 45,
+    "min_difference": -0.038,
+    "max_difference": 0.065
+  },
+  "analytic_example": {
+    "raw_macro_mse": 0.01175,
+    "shrink_macro_mse_k90": 0.010242499999999998,
+    "raw_screen_rate": 0.7383926086167968,
+    "shrink_screen_rate_k90": 0.0
+  },
+  "inputs": {
+    "results\\main_v1\\summary.csv": "5382a02e335c6cc573b5239612ee8451e1f0e90f9d6f92514c79959ba2ceed61",
+    "results\\ablation_v1\\summary.csv": "f57c3eea195a47a0e284a3797991afb850229cc6df02eb4bda33d2d83fe6dac0",
+    "results\\semisynthetic_v2\\newer_baselines_summary.csv": "b4514086b47e0dfe72aee0d417fd6db86bffeb26218f396e20bf81d37b8fb54f",
+    "results\\semisynthetic_v2\\summary.csv": "042b6fcc5e2a541f5f50db5f0fba114a22315477d43ff1c8f94faad3dcbc40f9",
+    "results\\semisynthetic_v2\\templates.csv": "259701847673ffc4b1c80de14e75984edeae0338c19d5cd8afc02b91fa2d1a77",
+    "results\\newer_baselines_v1\\newer_baselines_summary.csv": "0625e6b954a5d85f2b9beee3722bcb4e073dede302a960f25c0cac832fa2f394",
+    "results\\newer_baselines_v1\\summary.csv": "d5ab2b370387b37c379203eedd0f20735035f94a6ac1a4ad2fd47b5078bfa842"
+  }
+}

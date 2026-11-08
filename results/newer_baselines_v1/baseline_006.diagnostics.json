@@ -1,0 +1,1442 @@
+[
+  {
+    "replicate": 0,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0011584524665506437,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 0,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 1,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0019216955074634675,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 1,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 2,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002026625910159506,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 2,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 3,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002705173885591666,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 3,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 4,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001134019925006582,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 4,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 5,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0018159141033829086,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 5,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 6,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0006249506511406761,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 6,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 7,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0018321038629329853,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 7,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 8,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002587066616804866,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 8,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 9,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0023634929585624703,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 9,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 10,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002308654136729429,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 10,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 11,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0018034492570611106,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 11,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 12,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0033881528096391255,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 12,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 13,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0025870666168048657,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 13,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 14,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0016748722312754985,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 14,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 15,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002778701181012634,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 15,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 16,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0007017919364648216,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 16,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 17,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0022603290588911642,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 17,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 18,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0014809396571278089,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 18,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 19,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0015690908271949408,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 19,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 20,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0034820890221661984,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 20,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 21,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0011395806634423777,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 21,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 22,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.004513170199789962,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 22,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 23,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001034791636918941,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 23,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 24,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002372959548764619,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 24,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 25,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002033581560469604,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 25,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 26,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0006231420143893795,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 26,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 27,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.00280009226754225,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 27,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 28,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0008229804969218553,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 28,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 29,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002159393189375804,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 29,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 30,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0020170156164499263,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 30,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 31,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001015780479467136,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 31,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 32,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0019458268299869879,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 32,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 33,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0012040852292976069,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 33,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 34,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0016748722312754983,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 34,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 35,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0009734999421599493,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 35,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 36,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002938396651185774,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 36,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 37,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002865479096880302,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 37,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 38,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0008664982072677899,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 38,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 39,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0006145825547672442,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 39,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 40,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002681444290104019,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 40,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 41,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.003066153027324286,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 41,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 42,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0014869272837738788,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 42,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 43,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0011395806634423777,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 43,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 44,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0024912493347009814,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 44,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 45,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0022676756764585864,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 45,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 46,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0011373563680680597,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 46,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 47,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.00252318842873561,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 47,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 48,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002565372137837948,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 48,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 49,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0012705669465966742,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 49,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 50,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001075076097587149,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 50,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 51,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0011447706859824538,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 51,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 52,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0028980208153306774,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 52,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 53,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002254341432245095,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 53,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 54,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.003098092121358913,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 54,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 55,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0011835542003730331,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 55,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 56,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0024225501513057443,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 56,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 57,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001969556425474634,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 57,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 58,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0011595993218112418,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 58,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 59,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0016662205586278356,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 59,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 60,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001654580829863819,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 60,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 61,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0028106402750472615,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 61,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 62,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0024912493347009823,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 62,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 63,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0020407452119375726,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 63,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 64,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0014539477430126888,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 64,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 65,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0023492299532769725,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 65,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 66,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0023223662602720905,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 66,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 67,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0013612687690827624,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 67,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 68,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0009241947280292283,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 68,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 69,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002923331040792081,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 69,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 70,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0017797196615734643,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 70,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 71,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.003037388222418712,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 71,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 72,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0008029706301288841,
+    "convergence_warnings": 1
+  },
+  {
+    "replicate": 72,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 73,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.003452889114223506,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 73,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 74,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001803273558241207,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 74,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 75,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002027476911544024,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 75,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 76,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.003190089942739264,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 76,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 77,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0020819362078783924,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 77,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 78,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002586525908153435,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 78,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 79,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0028130507727102527,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 79,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 80,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002168518783651435,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 80,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 81,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0041520822245016365,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 81,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 82,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0009045073466838597,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 82,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 83,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002906457557151145,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 83,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 84,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0012050738050195257,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 84,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 85,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0014799417193534644,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 85,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 86,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0009926444815617024,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 86,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 87,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0019090549623217647,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 87,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 88,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001563679648145722,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 88,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 89,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0018240447550315207,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 89,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 90,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.006479174083303667,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 90,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 91,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0046330551337856254,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 91,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 92,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0018711488108966012,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 92,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 93,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0013927884870606777,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 93,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 94,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0013849945864088235,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 94,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 95,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002267675676458586,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 95,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 96,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0027467620869780053,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 96,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 97,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0019858961709463205,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 97,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 98,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002946833393006242,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 98,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 99,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.000982729053887945,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 99,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 100,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0022041660110506075,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 100,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 101,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001886435039436614,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 101,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 102,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0017982838693694823,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 102,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 103,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.00268288389890875,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 103,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 104,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0013622573448046817,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 104,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 105,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.001595702501177471,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 105,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 106,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002643110687469402,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 106,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 107,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0035015556274613276,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 107,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 108,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0024460525035199044,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 108,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 109,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0008593194462782797,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 109,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 110,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0038290755376608693,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 110,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 111,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0016096736300182993,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 111,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 112,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0017114632830014776,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 112,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 113,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0016043512952217936,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 113,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 114,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.002589058504252156,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 114,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 115,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0031601624361809267,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 115,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 116,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0021593931893758036,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 116,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 117,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.003184690805728818,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 117,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 118,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.0023017707623016804,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 118,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  },
+  {
+    "replicate": 119,
+    "method": "sr_point_adapter",
+    "status": "ok",
+    "alpha": 0.006686839919306989,
+    "convergence_warnings": 0
+  },
+  {
+    "replicate": 119,
+    "method": "suremap_author_adapter",
+    "status": "ok"
+  }
+]

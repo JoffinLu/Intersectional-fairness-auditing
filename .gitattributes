@@ -1,0 +1,20 @@
+# Preserve exact-byte scientific records and upstream files used by hash checks.
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+/vendor/SureMap/data.py -text
+/vendor/SureMap/suremap.py -text
+/vendor/** -text
+/paper/sagej.cls -text
+/paper/SageH.bst -text
+/paper/readme.txt -text
+/results/** -text
+/analysis/** -text
+/data/** -text
+/figure_data/** -text
+*.npz binary
+*.pdf binary
+*.png binary
+*.zip binary

@@ -1,0 +1,24 @@
+{
+  "mode": "semisynthetic",
+  "started_seed": 20261023,
+  "completed_at": "2026-10-23T03:12:14+08:00",
+  "elapsed_seconds": 107.09034059999976,
+  "repetitions": 1000,
+  "baseline_repetitions": 80,
+  "configs": 16,
+  "code_sha256": {
+    "run_extended.py": "fdeb57deefadd7e59ba333e40555f9bc72c798aa02e82f35371bc07b3448b10e",
+    "run_simulation.py": "759b06285a5e8bcfcfc8b6fff4775d3975afe15e374a6c1d700ebff66d9a05da",
+    "audit_methods.py": "3b6e6de694b421edc0bb63756966d930f17880777bec6092d19d59cf4b83b5e0",
+    "sr_adapter.py": "9a596df5b430176f35c9a46a0d56c4379d2beb070042cd56d35d3a9dab2d07c5",
+    "suremap_adapter.py": "ec40e62a4da7b821abd74f18f7de274ed3c30fb7d0603a50bc44a1fa8dded043"
+  },
+  "data_sha256": {
+    "acs_employment_metadata.json": "ec0b5d651571aefe95b2caa192bdd104f5a76d0bb22f73f2cd122b2e2137c0d0",
+    "acs_income_metadata.json": "7e1deac9bdcd4be066e193ebe34bae7f6ddfda1fa4ee89ffff63cabad0aec37b",
+    "adult_metadata.json": "3483ef092cdc627a58268a734c4f101acad6afab9b03abdbf7cd3991ddecaf74",
+    "diabetes_metadata.json": "94245a0533f7d59919e3c870be1cac0a5a2ea58bb921d62900c19eccc21cf99a"
+  },
+  "scope": "known independent Bernoulli semi-synthetic losses, not real population truths",
+  "gpu_hours": 0
+}

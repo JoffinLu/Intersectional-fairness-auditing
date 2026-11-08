@@ -1,0 +1,10 @@
+{
+  "scenario_id": "scenario_004",
+  "family": "global_null",
+  "groups": 32,
+  "target_n": 10,
+  "effect_above_margin": -0.05000000000000002,
+  "target_group": 0,
+  "confirmation": 0.8,
+  "floor": 0.1
+}

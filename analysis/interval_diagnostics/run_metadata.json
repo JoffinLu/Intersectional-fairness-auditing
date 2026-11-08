@@ -1,0 +1,33 @@
+{
+  "completed_at": "2026-10-26T16:36:18+08:00",
+  "elapsed_seconds": 48.999158999999054,
+  "input_hashes": {
+    "results/newer_baselines_v1/scenario_000.npz": "dcb6599ea7424eeb016b05cea0421153af752bb9db86bd2826baf3b6d86904fd",
+    "results/newer_baselines_v1/scenario_000.json": "92e73babb5dae4b91660f6d1ec6fcaf5ade93c6728119beec3541d6017af0824",
+    "results/newer_baselines_v1/scenario_001.npz": "4abb8174226d0a1b8130f616b8d03c5de9bccce27ddbdab38f3ceeed1e6c7daa",
+    "results/newer_baselines_v1/scenario_001.json": "ca381cfde4fd32c812660e7b1062c61d6ec2dc966c29dfc1aa60c74d387d5404",
+    "results/newer_baselines_v1/scenario_002.npz": "e62c1137022ded58ff8462a446ede9076115ee889edbd736fabfd2b0e7ff8695",
+    "results/newer_baselines_v1/scenario_002.json": "010e86de1a86ddcfbd9e81ec60a63ece841a300b8f35f6be355fb7b8059c86ab",
+    "results/newer_baselines_v1/scenario_003.npz": "787729e516614d057d3f425ed618bac85dafe6358a45b48a7c45653f85005609",
+    "results/newer_baselines_v1/scenario_003.json": "5342936aa344838ffad24aadf151496dd32bbe5bf247e2101ef118d4008ef36a",
+    "results/newer_baselines_v1/scenario_004.npz": "a8530c9ebe61c78c97ea2a2903726dc9205330cddac0bdcf4dcbe093a076dba1",
+    "results/newer_baselines_v1/scenario_004.json": "03561b07e28fd82a08f1e2b9a68f1c3a1cdb7e167fa149acb559c539f5ab0785",
+    "results/newer_baselines_v1/scenario_005.npz": "2b10ca222cee02c1e5d421eb6dfa9fd507c8be7860e7927135291a28b6c74dee",
+    "results/newer_baselines_v1/scenario_005.json": "3fd5f4002b04f5ca42ab6682d978b612816cc6c0e52e70398241dcaba0c6adea",
+    "results/newer_baselines_v1/scenario_006.npz": "80a870f714226be0ef55b7f9532ae9747007db3f2b4991671c8381b22778785a",
+    "results/newer_baselines_v1/scenario_006.json": "615b782ce177eccc8a27e89eb5f8258263c2f58744fb773680a310f132dae02b"
+  },
+  "settings": 7,
+  "reused_audit_datasets": 840,
+  "new_generated_audit_datasets": 0,
+  "group_contrasts_per_method": 26880,
+  "posterior_draws": 10000,
+  "quantile_method": "inverted_cdf",
+  "posterior_seed": 20261026,
+  "sensitivity_seed": 20261027,
+  "upstream_code_imported_or_executed": false,
+  "scope": "exploratory diagnostics; published interval ingredients adapted to conditional FNR, not a reproduction of the original SAFT study or guaranteed frequentist SAFT family control",
+  "original_run_plan_sha256": "8c6c40f372d3bd71965612455f087f686ff8fb90ea265f3f42259d4428f063dc",
+  "original_run_source_sha256": "83f04e900da8239b550fe5ef0615c06b45a19edae5b6800f690bea10284266f1",
+  "protocol_document": "protocols/interval_diagnostics.json"
+}

@@ -1,0 +1,103 @@
+{
+  "dataset": "acs_income",
+  "created_utc": "2026-10-22T10:48:23.956910+00:00",
+  "seed": 20261022,
+  "rows": 22268,
+  "positives": 6924,
+  "split_rows": {
+    "train": 13383,
+    "calibration": 4436,
+    "audit": 4449
+  },
+  "split_positive_n": {
+    "train": 4161,
+    "calibration": 1416,
+    "audit": 1347
+  },
+  "predictor_columns": [
+    "COW",
+    "SCHL",
+    "MAR",
+    "OCCP",
+    "POBP",
+    "RELP",
+    "WKHP"
+  ],
+  "excluded_sensitive_predictors": [
+    "sex/gender/SEX",
+    "race/RAC1P",
+    "age/AGEP"
+  ],
+  "group_levels": {
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "race": [
+      "AIAN_combined",
+      "AlaskaNative",
+      "AmericanIndian",
+      "Asian",
+      "Black",
+      "Multiracial",
+      "NativeHawaiianPacific",
+      "Other",
+      "White"
+    ],
+    "age": [
+      "<40",
+      "40-69",
+      "70+"
+    ]
+  },
+  "group_count": 54,
+  "nonempty_audit_groups": 31,
+  "groups_with_audit_positives": 23,
+  "X_shape": [
+    22268,
+    356
+  ],
+  "X_nnz": 155827,
+  "X_format": "CSR, transform fit on train only; row order matches main npz",
+  "group_n_definition": "Number of y=1 records in the group and relevant split (FNR denominator), not total group rows.",
+  "unit_split": "household SERIALNO",
+  "models": {
+    "lr": {
+      "threshold": 0.3193503848296946,
+      "threshold_rule": "calibration positive 20th-percentile order statistic, ties positive",
+      "fit_seconds": 0.24622909998288378,
+      "audit_auc": 0.8510129729269188,
+      "audit_accuracy": 0.7628680602382558,
+      "calibration_fnr": 0.1998587570621469,
+      "audit_fnr": 0.22791388270230142,
+      "hyperparameters": {
+        "C": 1.0,
+        "max_iter": 400,
+        "solver": "lbfgs"
+      }
+    },
+    "hgb": {
+      "threshold": 0.3107696296122881,
+      "threshold_rule": "calibration positive 20th-percentile order statistic, ties positive",
+      "fit_seconds": 0.5065776999981608,
+      "audit_auc": 0.8324080974651984,
+      "audit_accuracy": 0.7437626432906271,
+      "calibration_fnr": 0.1998587570621469,
+      "audit_fnr": 0.23979213066072755,
+      "hyperparameters": {
+        "learning_rate": 0.08,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "max_depth": 5,
+        "min_samples_leaf": 30,
+        "l2_regularization": 1.0,
+        "early_stopping": false,
+        "categorical_max_categories": 32
+      }
+    }
+  },
+  "raw_records": 47777,
+  "eligible_records": 22268,
+  "target": "PINCP > $50,000",
+  "selection": "Folktables 0.0.12 official task preprocessing. ACSIncome: AGEP>16, PINCP>100, WKHP>0, PWGTP>=1. ACSEmployment: no prefilter (includes minors/nonworking people); military ESR categories are negative under the official target. Alabama, 2018, 1-year person PUMS. Split by household SERIALNO. Unweighted person-record analysis; no US-population estimand."
+}

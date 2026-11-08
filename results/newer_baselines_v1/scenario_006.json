@@ -1,0 +1,10 @@
+{
+  "scenario_id": "scenario_006",
+  "family": "structured_additive",
+  "groups": 32,
+  "target_n": 10,
+  "effect_above_margin": -0.09000000000000001,
+  "target_group": 0,
+  "confirmation": 0.8,
+  "floor": 0.1
+}

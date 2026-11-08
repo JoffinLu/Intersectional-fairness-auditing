@@ -1,0 +1,36 @@
+# Local environments and interpreter caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Downloaded public records and regenerated individual-level caches
+/data/raw/*.zip
+/data/raw/*.part
+/data/processed/*.npz
+/data/processed/validation_report.json
+
+# New replication runs; retain the versioned manuscript evidence
+/results/reproduced_*/
+/analysis/reproduced_*/
+/analysis/artifact_manifest.jsonl
+
+# Typesetting intermediates and local automation state
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+/build/
+.aris/
+.agents/
+.codex/
+review-stage/
+idea-stage/
+refine-logs/
+*.part

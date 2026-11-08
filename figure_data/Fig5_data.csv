@@ -1,0 +1,17 @@
+scenario_id,family,dataset,model,geometry,groups,target_n,effect_above_margin,target_group,confirmation,floor,method,full_power,split_power,paired_difference,paired_mcse,repetitions,y,full_mcse,split_mcse
+scenario_000,real_support_semisynthetic,adult,lr,homogeneous,11,10,0.2,0,0.8,0.1,split_conflict_holm,0.027,0.048,0.021,0.0045364721513065,1000,1,0.005128089049275305,0.006763264133666653
+scenario_001,real_support_semisynthetic,adult,lr,calibration_heterogeneous,11,10,0.2,0,0.8,0.1,split_conflict_holm,0.025,0.053,0.028,0.00521950603441,1000,2,0.004939574819698493,0.00708810561724649
+scenario_002,real_support_semisynthetic,adult,hgb,homogeneous,11,10,0.2,0,0.8,0.1,split_conflict_holm,0.034,0.058,0.024,0.004842256441727,1000,3,0.0057338361396953854,0.0073953154557929906
+scenario_003,real_support_semisynthetic,adult,hgb,calibration_heterogeneous,11,10,0.2,0,0.8,0.1,split_conflict_holm,0.022,0.037,0.015,0.0038457495745029,1000,4,0.004640855259274688,0.005972157622389639
+scenario_004,real_support_semisynthetic,diabetes,lr,homogeneous,10,10,0.2,2,0.8,0.1,split_conflict_holm,0.023,0.033,0.01,0.0031480009386767,1000,6,0.0047427305946567844,0.005651808820452347
+scenario_005,real_support_semisynthetic,diabetes,lr,calibration_heterogeneous,10,10,0.2,2,0.8,0.1,split_conflict_holm,0.031,0.044,0.013,0.0038530307351286,1000,7,0.005483527064679181,0.006488921798427387
+scenario_006,real_support_semisynthetic,diabetes,hgb,homogeneous,10,10,0.2,2,0.8,0.1,split_conflict_holm,0.027,0.042,0.015,0.0040977788851756,1000,8,0.005128089049275305,0.006346359293033784
+scenario_007,real_support_semisynthetic,diabetes,hgb,calibration_heterogeneous,10,10,0.2,2,0.8,0.1,split_conflict_holm,0.02,0.031,0.011,0.0038592607963046,1000,9,0.004429403980178328,0.005483527064679181
+scenario_008,real_support_semisynthetic,acs_income,lr,homogeneous,10,10,0.2,0,0.8,0.1,split_conflict_holm,0.022,0.047,0.025,0.0049395748196984,1000,11,0.004640855259274688,0.006695956678163011
+scenario_009,real_support_semisynthetic,acs_income,lr,calibration_heterogeneous,10,10,0.2,0,0.8,0.1,split_conflict_holm,0.025,0.035,0.01,0.0031480009386767,1000,12,0.004939574819698493,0.005814534272734903
+scenario_010,real_support_semisynthetic,acs_income,hgb,homogeneous,10,10,0.2,0,0.8,0.1,split_conflict_holm,0.023,0.042,0.019,0.0043194510829106,1000,13,0.0047427305946567844,0.006346359293033784
+scenario_011,real_support_semisynthetic,acs_income,hgb,calibration_heterogeneous,10,10,0.2,0,0.8,0.1,split_conflict_holm,0.025,0.03,0.005,0.0022315868748448,1000,14,0.004939574819698493,0.0053971408290991564
+scenario_012,real_support_semisynthetic,acs_employment,lr,homogeneous,19,10,0.2,0,0.8,0.1,split_conflict_holm,0.022,0.037,0.015,0.0038457495745029,1000,16,0.004640855259274688,0.005972157622389639
+scenario_013,real_support_semisynthetic,acs_employment,lr,calibration_heterogeneous,19,10,0.1999999999999999,0,0.8,0.1,split_conflict_holm,0.031,0.034,0.003,0.0022351724756707,1000,17,0.005483527064679181,0.0057338361396953854
+scenario_014,real_support_semisynthetic,acs_employment,hgb,homogeneous,19,10,0.2,0,0.8,0.1,split_conflict_holm,0.027,0.047,0.02,0.0046499055497527,1000,18,0.005128089049275305,0.006695956678163011
+scenario_015,real_support_semisynthetic,acs_employment,hgb,calibration_heterogeneous,19,10,0.2,0,0.8,0.1,split_conflict_holm,0.026,0.032,0.006,0.0024433521993298,1000,19,0.005034813735318254,0.005568393575081327

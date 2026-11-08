@@ -1,0 +1,295 @@
+\section{Audit target and sampling design}\label{sec:audit-target}
+
+We audit a frozen binary classifier, including its decision threshold, on a
+prespecified finite family of $G$ mutually exclusive intersectional cells.
+Write $E=\mathbf{1}\{f(X)=0\}$ for a classification error among observations
+with true label $Y=1$. The classifier's false-negative rate (FNR) in cell $g$
+is $p_g=\Pr(E=1\mid Y=1,g)$. Its effective sample size $n_g$ counts
+positive-label observations, rather than all cell members. Our target is a
+one-sided difference relative to the count-weighted complement, with a fixed
+practical tolerance $0<\Delta<1$.
+
+In the fixed-stratum design, positive counts $n_1,\ldots,n_G$ are fixed and
+errors are independent Bernoulli observations with constant rate $p_g$
+within each cell. Let $N=\sum_h n_h$, $\pi_g=n_g/N$, and assume
+$1-\pi_g>0$ so that a reference exists. Define
+\begin{equation}
+ \begin{aligned}
+ q_g&=\sum_{h\ne g}\frac{\pi_h}{1-\pi_g}p_h,\\
+ \delta_g&=p_g-q_g,\qquad H_{0g}:\delta_g\le\Delta.
+ \end{aligned}
+ \label{eq:theory-target}
+\end{equation}
+Although the target error count is binomial, the complement count generally
+has a Poisson-binomial law. With $\bar p=\sum_h\pi_hp_h$, the equivalent
+identity $\delta_g=(p_g-\bar p)/(1-\pi_g)$ also shows that an injected
+increase in $p_g$ need not equal the resulting disparity. We use the actual
+$\delta_g$ to identify harmed cells.
+
+In an independent and identically distributed (IID) population audit, the same
+comparison has a different interpretation: $q_g=\Pr(E=1\mid Y=1,g^c)$. Conditional on the two positive
+counts for a fixed cell, the target and complement counts are independent
+binomials. Our fixed-count simulations instead use
+Eq.~\eqref{eq:theory-target}; a binomial reference assumption is unnecessary
+for their confirmation test. Neither model automatically describes
+dependent patients, households, or complex survey sampling.
+
+Let $\mathcal H=\{g:\delta_g>\Delta\}$. For audit flags $F_g\in\{0,1\}$,
+the familywise error rate (FWER) is
+$\Pr\{\exists g\notin\mathcal H:F_g=1\}$. The audit missed-harm rate is
+\begin{equation}
+ \mathrm{MHR}=\frac{1}{|\mathcal H|}
+      \sum_{g\in\mathcal H}\Pr(F_g=0), \qquad |\mathcal H|>0.
+ \label{eq:theory-mhr}
+\end{equation}
+Thus, MHR concerns audit non-detection, whereas classifier FNR concerns
+prediction errors. MHR is undefined when no cell is harmed. On a fully
+supported design, estimation is assessed separately through macro risk
+$G^{-1}\sum_g\mathbb E(\widehat p_g-p_g)^2$ and prevalence-weighted risk
+$\sum_g\pi_g\mathbb E(\widehat p_g-p_g)^2$. These averages do not specify
+the probability of identifying a particular harmed cell.
+
+Splitting must preserve the target. We assign independent error
+observations to discovery $D$ and confirmation $C$, with
+$n_h^C=c n_h$ exactly in every supported cell, $0<c<1$, and integer counts in both
+parts. Then complement proportions, and hence $q_g$, are unchanged.
+Random within-cell split counts generally change the conditional
+complement weights. Such a design requires an explicitly standardized
+reference instead. A zero target or reference count is recorded as
+insufficient information, with a confirmation p-value of one; the cell remains
+in the registered family. Non-rejection is inconclusive and does not
+certify fairness.
+
+\section{Estimation and screening can separate}\label{sec:separation}
+
+Sharing information across cells can improve mean estimation, as pursued
+by structured regression and SureMap~\citep{herlihy2024structured,khodak2024suremap}. To isolate the decision
+mechanism, we first examine a fixed Beta posterior mean. This calculation
+does not characterize all fitted empirical Bayes, structured regression,
+or SureMap estimators. Its reference is known, and its threshold decision
+is a descriptive screen rather than an error-controlled test.
+
+\begin{proposition}[Fixed-prior risk and strict-screen boundary]
+\label{prop:theory-shrinkage}
+Let $X\sim\mathrm{Bin}(n,p)$, $n\ge1$, and fix $\kappa>0$ and
+$\mu\in(0,1)$ independently of $X$. Set
+$\widehat p=X/n$ and $\widetilde p=(X+\kappa\mu)/(n+\kappa)$.
+For an oracle reference $r$, let $t=r+\Delta\in(0,1)$ and define
+$A_0=\{\widehat p>t\}$ and $A_\kappa=\{\widetilde p>t\}$.
+Writing $R_\kappa(p)=\mathbb E(\widetilde p-p)^2$ and
+$R_0(p)=p(1-p)/n$, we have
+\begin{equation}
+ \begin{aligned}
+ &R_\kappa(p)-R_0(p)\\
+ &\quad=\frac{\kappa^2(p-\mu)^2-(2\kappa+\kappa^2/n)p(1-p)}
+ {(n+\kappa)^2}.
+ \end{aligned}
+ \label{eq:theory-risk}
+\end{equation}
+Moreover,
+\begin{equation}
+ \begin{aligned}
+ \Pr_p(A_\kappa)&=\Pr_p(X\ge K_\kappa),\\
+ K_\kappa&=\lfloor nt+\kappa(t-\mu)\rfloor+1,
+ \end{aligned}
+ \label{eq:theory-cutoff}
+\end{equation}
+where $K_\kappa\le0$ or $K_\kappa>n$ gives probability one or zero,
+respectively. If $t>\mu$, the integer cutoff cannot decrease. If
+\begin{equation}
+ \kappa(t-\mu)\ge n(1-t),
+ \label{eq:theory-collapse}
+\end{equation}
+the shrunk screen never selects the cell. If $p=t+\varepsilon\le1$,
+$\varepsilon>0$, and $a=\kappa(t-\mu)-n\varepsilon>0$, then
+\begin{equation}
+ \begin{aligned}
+ \Pr_p(A_\kappa)&\le e^{-2a^2/n},\\
+ \Pr_p(A_0^c)&\le e^{-2n\varepsilon^2}.
+ \end{aligned}
+ \label{eq:theory-screen-bound}
+\end{equation}
+\end{proposition}
+
+Equation~\eqref{eq:theory-risk} balances variance reduction against bias;
+Eq.~\eqref{eq:theory-cutoff} tracks the error count needed to cross a
+decision threshold. Their joint dependence on effective count, tolerance,
+signal, and shrinkage matters. For $t>\mu$, the dimensionless ratio
+$\kappa(t-\mu)/(n\varepsilon)>1$ means that shrinkage raises the threshold
+above the harmed cell's expected error count. This is a finite-sample
+diagnostic, not a minimax phase transition. The integer cutoff may remain
+unchanged after a small increase in the real threshold.
+
+An exact example illustrates this separation. Take five equally sized
+cells with $n=10$, four with rate $0.1$ and one with rate $0.35$, and fix
+$\mu=0.1$, $\kappa=90$, and $\Delta=0.1$. The exceptional cell's complement
+has rate $r=0.1$, so its oracle threshold is $t=0.2$. Macro mean squared error (MSE) is
+$0.01175$ for raw proportions and $0.0102425$ for shrinkage. The raw
+screen selects this cell with probability
+$\Pr_{0.35}\{X\ge3\}=0.7383926086$, while the shrunk screen would require
+$X>11$ and has selection probability zero. These numbers follow from
+finite-binomial calculations rather than fitted experiment outcomes. The
+prior is deliberately strong; whether fitted methods reach a comparable
+regime is an empirical question.
+
+More generally, each cell with $p=\mu$ has strictly smaller risk under
+this shrinker. Sufficiently many such cells offset the finite risk cost of
+one exceptional cell, even when its screen collapses. The calculation
+holds conditionally for hyperparameters learned from independent data.
+Treating hyperparameters fitted to the same data as fixed would not justify
+Eq.~\eqref{eq:theory-risk}. Full proofs appear in
+Appendix~\ref{app:theory-proofs}.
+
+\section{Confirmation and allocation under a common budget}
+\label{sec:confirmation}
+
+\subsection{Unknown-reference confirmation}
+
+Our primary confirmation engine combines a Hoeffding upper bound for the
+reference with an exact binomial target tail; we refer to it as HB. The
+ingredients are established concentration and nuisance-parameter
+methods~\citep{hoeffding1963probability,berger1994pvalues}.
+
+\begin{proposition}[HB p-value with a heterogeneous reference]
+\label{prop:theory-hb}
+Let $X\sim\mathrm{Bin}(n,p)$, $n\ge1$. Let the reference observations
+$B_1,\ldots,B_m$, $m\ge1$, be independent Bernoulli variables with
+possibly unequal means $q_1,\ldots,q_m$. Define
+$q=m^{-1}\sum_jq_j$ and $\widehat q=m^{-1}\sum_j B_j$.
+Fix $0<\eta<1$ before observing confirmation outcomes, and set
+\begin{equation}
+ \begin{aligned}
+ U_q&=\min\left\{1,\widehat q+
+          \sqrt{\frac{\log(1/\eta)}{2m}}\right\},\\
+ \theta_U&=\min\{1,U_q+\Delta\}.
+ \end{aligned}
+ \label{eq:theory-upper-reference}
+\end{equation}
+\begin{equation}
+ \begin{aligned}
+ P_{\mathrm{HB}}&=\min\{1,\eta+T_{\theta_U}(X)\},\\
+ T_\theta(x)&=\Pr\{\mathrm{Bin}(n,\theta)\ge x\}.
+ \end{aligned}
+ \label{eq:theory-hb}
+\end{equation}
+Under $p-q\le\Delta$, $\Pr(P_{\mathrm{HB}}\le u)\le u$ for all
+$u\in[0,1]$. Setting $P_{\mathrm{HB}}=1$ when either denominator is zero
+preserves validity.
+\end{proposition}
+
+The binomial target assumption is essential: an atomic cell has a common
+rate, whereas an aggregate of heterogeneous cells need not. The proof
+allows a heterogeneous complement and does not replace its law by a
+binomial approximation. For a fixed standardized reference
+$q=\sum_h\nu_hp_h$, with fixed $\nu_h\ge0$ and $\sum_h\nu_h=1$,
+samples from supported cells instead give
+$\widehat q=\sum_h\nu_h\widehat p_h$ and upper radius
+$\{\frac12\log(1/\eta)\sum_h\nu_h^2/n_h\}^{1/2}$.
+Unsupported cells with positive reference weight require a worst-case
+contribution or an insufficient-information outcome.
+
+For heterogeneous targets, a separate valid alternative uses independent
+Bernoulli observations on both sides. With empirical difference $d$ and
+$V=1/n+1/m$, the difference-Hoeffding p-value is
+\begin{equation}
+ \begin{aligned}
+ P_{\mathrm H}&=\exp\{-2(d-\Delta)_+^2/V\},\\
+ (x)_+&=\max\{x,0\}.
+ \end{aligned}
+ \label{eq:theory-hoeffding}
+\end{equation}
+It tests the difference of the two average means. We use its conservative
+boundary for planning below; it does not supply a power formula for HB.
+
+\subsection{Independent discovery weights and weighted Holm}
+
+Discovery chooses nonnegative scores $s_g(D)$ without using confirmation
+outcomes. For a fixed floor $0<\rho\le1$, define
+\begin{equation}
+ w_g=\frac{\rho}{G}+(1-\rho)\frac{s_g}{\sum_hs_h},
+ \label{eq:theory-weights}
+\end{equation}
+using $w_g=1/G$ when all scores vanish. Thus $w_g\ge\rho/G$ and
+$\sum_gw_g=1$. Independent weighting and sample splitting are established
+multiple-testing tools~\citep{kang2009weighted,rubin2006splitting}; here
+their role is to allocate a fixed audit budget.
+
+\begin{proposition}[Conditional strong FWER control]
+\label{prop:theory-holm}
+Fix $0<\alpha<1$. Suppose the confirmation p-values for true nulls are super-uniform conditional on
+discovery and the legitimate confirmation design. Order hypotheses by
+$P_g/w_g$, with a fixed rule for ties, and reject sequentially while
+\begin{equation}
+ P_{(j)}\le\frac{\alpha w_{(j)}}{\sum_{k=j}^G w_{(k)}},
+ \label{eq:theory-holm}
+\end{equation}
+stopping at the first failure. Then FWER is at most $\alpha$, allowing
+arbitrary dependence among confirmation p-values. The rejection set
+contains every weighted-Bonferroni rejection $P_g\le\alpha w_g$.
+\end{proposition}
+
+The proof is the usual first-false-rejection argument for step-down
+testing~\citep{holm1979simple}. Misspecified discovery scores affect
+allocation, while conditional validity provides error control. The floor
+ensures a positive minimum testing budget; it gives neither equal power
+nor equal information.
+
+The five score options are equal scores, $\sqrt{n_g^D}$, raw excess
+$(\widehat\delta_g^D-\Delta)_+$, empirical Bayes excess
+$(\widetilde\delta_g^D-\Delta)_+$, and a conflict score
+\begin{equation}
+ \begin{aligned}
+ s_g^{\mathrm{conflict}}&=(\widehat\delta_g^D-\Delta)_+\\
+ &\quad+(\widehat\delta_g^D-\widetilde\delta_g^D)_+.
+ \end{aligned}
+ \label{eq:theory-conflict}
+\end{equation}
+Raw and fitted differences use their respective count-weighted
+complements. Scores are zero for cells without discovery observations.
+The conflict score is a baseline option for testing whether disagreement
+helps allocation; a consistent additional benefit has not been demonstrated, and the score is not
+presented as a new testing principle.
+
+The primary comparator uses all audit observations with HB and ordinary
+Holm, corresponding to equal weights. The split methods use the same total
+count budget, estimand, and p-value engine. To isolate floor effects, all
+main comparisons and floor ablations fix
+$\eta=\alpha\rho_{\min}/(20G)$ with $\rho_{\min}=0.05$, rather than changing
+the HB engine with $\rho$. For planned floors $\rho\ge\rho_{\min}$,
+$\eta\le\alpha w_g/20$. Score definitions, floors, and nuisance budgets
+are frozen before confirmation.
+
+\subsection{The allocation advantage must offset splitting}
+
+For supported confirmation counts, let $V_g=1/n_g^C+1/m_g^C$.
+For Eq.~\eqref{eq:theory-hoeffding}, define the sufficient boundary
+$b_g(w)=\{(V_g/2)\log[1/(\alpha w)]\}^{1/2}$. If
+$\delta_g=\Delta+\varepsilon_g$ and $\varepsilon_g>b_g(w_g)$,
+weighted Holm has conditional power at least
+\begin{equation}
+ 1-\exp\{-2[\varepsilon_g-b_g(w_g)]^2/V_g\}.
+ \label{eq:theory-power-envelope}
+\end{equation}
+Below that boundary the stated lower bound is zero, which says nothing
+about whether actual power is zero. Replacing $w_g$ by $\rho/G$ gives a
+score-independent version.
+
+\begin{corollary}[Comparison of Hoeffding sufficient boundaries]
+\label{cor:theory-split}
+Suppose confirmation retains exactly a fraction $c$ of each relevant count,
+so $V_C=V_A/c$, where $A$ denotes all audit data. The split
+weighted-Bonferroni sufficient boundary is strictly smaller than the
+full-data equal-weight Bonferroni boundary if and only if
+\begin{equation}
+ w_g>\alpha^{c-1}G^{-c}.
+ \label{eq:theory-split-cost}
+\end{equation}
+\end{corollary}
+
+At $\alpha=0.05$ and $c=0.5$, this requires $w_g>0.5590$ for $G=64$,
+and $w_g>1.1180$ for $G=16$. The latter is impossible. These are
+comparisons of conservative sufficient boundaries, not an ordering of
+actual powers, and do not compare split and full-data Holm directly.
+Full-data Holm can improve upon its Bonferroni counterpart. Consequently,
+the FWER guarantee provides no general power advantage for splitting;
+that question requires the paired empirical comparisons.

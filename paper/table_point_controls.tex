@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering\small
+\caption{Additional point-screen diagnostics from the same 120 paired repetitions; additional summary of retained outputs. MSE columns are multiplied by $10^3$; parentheses report MCSE. Settings 1--4 are $(n_*,\varepsilon)=(20,.10),(20,.30),(80,.10),(80,.30)$; 5 is the global null, 6 is a high-count harmed target, and 7 is the additive control. The target is nonharmful in settings 5 and 7, so its screen frequency is not power. Any-null denotes the screening of at least one truly nonharmful cell; it is not an error-controlled flag. All seven estimators and per-cell false-screen summaries remain in the accompanying CSV.}\label{tab:pointcontrols}
+\begin{tabular}{llrrrr}
+\toprule
+Setting & Estimator & Macro MSE & Target MSE & Target screen\% & Any-null\% \\
+\midrule
+1 & Raw & 3.76 & 9.41 (1.12) & 76.7 (3.9) & 99.2 (0.8) \\
+1 & SR point & 0.79 & 20.41 (0.55) & 8.3 (2.5) & 3.3 (1.6) \\
+1 & SureMap & 0.88 & 19.00 (0.62) & 10.8 (2.8) & 11.7 (2.9) \\
+2 & Raw & 3.61 & 12.43 (1.69) & 100.0 (0.0) & 97.5 (1.4) \\
+2 & SR point & 1.95 & 55.27 (4.76) & 61.7 (4.5) & 14.2 (3.2) \\
+2 & SureMap & 2.86 & 64.60 (4.23) & 56.7 (4.5) & 53.3 (4.6) \\
+3 & Raw & 3.51 & 2.46 (0.35) & 97.5 (1.4) & 100.0 (0.0) \\
+3 & SR point & 0.47 & 9.21 (0.78) & 59.2 (4.5) & 5.0 (2.0) \\
+3 & SureMap & 0.78 & 8.81 (0.57) & 59.2 (4.5) & 40.0 (4.5) \\
+4 & Raw & 3.85 & 3.18 (0.35) & 100.0 (0.0) & 100.0 (0.0) \\
+4 & SR point & 0.56 & 8.07 (0.77) & 100.0 (0.0) & 17.5 (3.5) \\
+4 & SureMap & 1.66 & 11.53 (1.01) & 100.0 (0.0) & 91.7 (2.5) \\
+5 & Raw & 3.99 & 9.63 (1.37) & 31.7 (4.3) & 100.0 (0.0) \\
+5 & SR point & 0.14 & 0.06 (0.01) & 0.0 (0.0) & 7.5 (2.4) \\
+5 & SureMap & 0.19 & 0.19 (0.04) & 0.8 (0.8) & 5.0 (2.0) \\
+6 & Raw & 3.78 & 0.69 (0.09) & 100.0 (0.0) & 95.0 (2.0) \\
+6 & SR point & 0.25 & 0.98 (0.11) & 100.0 (0.0) & 6.7 (2.3) \\
+6 & SureMap & 0.74 & 1.62 (0.15) & 100.0 (0.0) & 23.3 (3.9) \\
+7 & Raw & 4.39 & 9.60 (2.01) & 7.5 (2.4) & 100.0 (0.0) \\
+7 & SR point & 0.57 & 1.53 (0.13) & 0.0 (0.0) & 31.7 (4.3) \\
+7 & SureMap & 0.55 & 1.19 (0.13) & 0.0 (0.0) & 42.5 (4.5) \\
+\bottomrule
+\end{tabular}
+\end{table*}

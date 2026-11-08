@@ -1,0 +1,23 @@
+{
+  "adult.zip": {
+    "source_url": "https://archive.ics.uci.edu/static/public/2/adult.zip",
+    "downloaded_utc": "2026-10-22T10:42:54.960306+00:00",
+    "sha256": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+    "bytes": 620237,
+    "path": "data\\raw\\adult.zip"
+  },
+  "acs_2018_1y_al_person.zip": {
+    "source_url": "https://www2.census.gov/programs-surveys/acs/data/pums/2018/1-Year/csv_pal.zip",
+    "downloaded_utc": "2026-10-22T10:43:02.455850+00:00",
+    "sha256": "b3579bea88751f554e1e40d2f314f9aa08801a33b4886d962c1ec0b51b0f1d03",
+    "bytes": 8463683,
+    "path": "data\\raw\\acs_2018_1y_al_person.zip"
+  },
+  "diabetes_130.zip": {
+    "source_url": "https://archive.ics.uci.edu/static/public/296/diabetes%2B130-us%2Bhospitals%2Bfor%2Byears%2B1999-2008.zip",
+    "downloaded_utc": "2026-10-22T10:44:35.800372+00:00",
+    "sha256": "f82ac129da2ddd2299391ff6fbae3a6a58b3edcf59ac9d7bd480c00fe453112a",
+    "bytes": 3170254,
+    "path": "data\\raw\\diabetes_130.zip"
+  }
+}

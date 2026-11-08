@@ -1,0 +1,33 @@
+{
+  "scenario_id": "scenario_008",
+  "family": "real_support_sensitivity",
+  "dataset": "diabetes",
+  "model": "lr",
+  "geometry": "calibration_heterogeneous",
+  "count_geometry": "capped_1000",
+  "target_rule": "smallest_eligible",
+  "groups": 10,
+  "target_group": 2,
+  "target_original_group": 6,
+  "target_key": "sex=Female|race=Caucasian|age=<40",
+  "target_n": 10,
+  "total_n": 770,
+  "target_original_audit_n": 14,
+  "target_calibration_n": 18,
+  "target_template_reference": 0.19620394485963394,
+  "target_probability": 0.44620394485963394,
+  "injection_capped": false,
+  "target_true_delta": 0.24999999999999997,
+  "effect_above_margin": 0.19999999999999996,
+  "harmful_groups": 2,
+  "confirmation": 0.8,
+  "floor": 0.1,
+  "alpha": 0.05,
+  "margin": 0.05,
+  "eta": 1.2500000000000002e-05,
+  "planned_repetitions": 1000,
+  "seed": 20261024,
+  "seed_spawn_key": [
+    8
+  ]
+}

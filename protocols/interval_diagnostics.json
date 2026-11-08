@@ -1,0 +1,28 @@
+{
+  "dated": "2026-10-26",
+  "status": "frozen_before_execution",
+  "purpose": "Exploratory interval-aware diagnostics on retained outcomes; original SR and Cherian interval procedures are not implemented.",
+  "data": "Reuse first120 saved repetitions of ALL seven newer_baselines_v1 scenarios; no new audit outcomes or model fits.",
+  "methods": [
+    "raw Wald 95% pointwise contrast interval",
+    "Published SAFT Algorithm1 branch: Wald only if min(k_g,n_g-k_g,k_complement,n_complement-k_complement)>=30; otherwise four-cell counts+1 Dirichlet posterior represented by independent conditional Beta ratios. Local FNR adaptation and tolerance rule remain explicit.",
+    "simultaneous Clopper-Pearson/BONFERRONI group-rate rectangle propagated to weighted-complement contrasts, family alpha.05"
+  ],
+  "posterior_draws": 10000,
+  "posterior_seed": 20261026,
+  "sensitivity_seed": 20261027,
+  "sensitivity_repetitions": 20,
+  "margin": 0.05,
+  "metrics": [
+    "true target disparity coverage",
+    "whole-family simultaneous coverage",
+    "mean interval width",
+    "target lower-endpoint>.05 rule frequency",
+    "any truly nonharmful cell lower-endpoint>.05 frequency",
+    "zero-disparity global-null native two-sided rejection frequency"
+  ],
+  "decision_scope": "Wald/SAFT pointwise intervals carry no familywise error guarantee. CP rectangle has simultaneous guarantee under group-binomial assumptions. Do not rank unequal error targets as fair power comparison. Native SAFT two-sided zero null is reported separately from the adapted tolerance rule.",
+  "reporting": "All settings, failures and Monte Carlo standard errors are retained. The diagnostic is exploratory and uses no new audit outcomes or classifier fits.",
+  "quantile_method": "inverted_cdf, matching the published inverse empirical CDF definition",
+  "correction_basis": "Official published paper p6 Algorithm1 and p5 quantile definition; https://proceedings.neurips.cc/paper_files/paper/2025/file/8cdc8e07038dcd423d382048b7063d07-Paper-Conference.pdf"
+}

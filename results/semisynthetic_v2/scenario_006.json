@@ -1,0 +1,13 @@
+{
+  "scenario_id": "scenario_006",
+  "family": "real_support_semisynthetic",
+  "dataset": "diabetes",
+  "model": "hgb",
+  "geometry": "homogeneous",
+  "groups": 10,
+  "target_n": 10,
+  "effect_above_margin": 0.2,
+  "target_group": 2,
+  "confirmation": 0.8,
+  "floor": 0.1
+}

@@ -1,0 +1,13 @@
+{
+  "scenario_id": "scenario_036",
+  "family": "boundary_null",
+  "groups": 32,
+  "target_n": 10,
+  "effect_above_margin": 0.0,
+  "target_group": 0,
+  "confirmation": 0.8,
+  "floor": 0.1,
+  "seed_spawn_key": [
+    36
+  ]
+}

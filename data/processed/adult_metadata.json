@@ -1,0 +1,102 @@
+{
+  "dataset": "adult",
+  "created_utc": "2026-10-22T10:48:11.519091+00:00",
+  "seed": 20261022,
+  "rows": 48842,
+  "positives": 11687,
+  "split_rows": {
+    "train": 29305,
+    "calibration": 9768,
+    "audit": 9769
+  },
+  "split_positive_n": {
+    "train": 7012,
+    "calibration": 2337,
+    "audit": 2338
+  },
+  "predictor_columns": [
+    "workclass",
+    "education",
+    "education-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week",
+    "native-country"
+  ],
+  "excluded_sensitive_predictors": [
+    "sex/gender/SEX",
+    "race/RAC1P",
+    "age/AGEP"
+  ],
+  "group_levels": {
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "race": [
+      "Amer-Indian-Eskimo",
+      "Asian-Pac-Islander",
+      "Black",
+      "Other",
+      "White"
+    ],
+    "age": [
+      "<40",
+      "40-69",
+      "70+"
+    ]
+  },
+  "group_count": 30,
+  "nonempty_audit_groups": 27,
+  "groups_with_audit_positives": 22,
+  "X_shape": [
+    48842,
+    99
+  ],
+  "X_nnz": 488420,
+  "X_format": "CSR, transform fit on train only; row order matches main npz",
+  "group_n_definition": "Number of y=1 records in the group and relevant split (FNR denominator), not total group rows.",
+  "unit_split": "record ID; public Adult has no original person identifier",
+  "models": {
+    "lr": {
+      "threshold": 0.2674613705658666,
+      "threshold_rule": "calibration positive 20th-percentile order statistic, ties positive",
+      "fit_seconds": 0.6368069000018295,
+      "audit_auc": 0.9015603086462175,
+      "audit_accuracy": 0.8177909714402702,
+      "calibration_fnr": 0.1998288403936671,
+      "audit_fnr": 0.18905047048759624,
+      "hyperparameters": {
+        "C": 1.0,
+        "max_iter": 400,
+        "solver": "lbfgs"
+      }
+    },
+    "hgb": {
+      "threshold": 0.3035431557719038,
+      "threshold_rule": "calibration positive 20th-percentile order statistic, ties positive",
+      "fit_seconds": 0.9945705000136513,
+      "audit_auc": 0.9178768882443891,
+      "audit_accuracy": 0.8396970007165524,
+      "calibration_fnr": 0.1998288403936671,
+      "audit_fnr": 0.19204448246364414,
+      "hyperparameters": {
+        "learning_rate": 0.08,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "max_depth": 5,
+        "min_samples_leaf": 30,
+        "l2_regularization": 1.0,
+        "early_stopping": false,
+        "categorical_max_categories": 32
+      }
+    }
+  },
+  "raw_records": 48842,
+  "eligible_records": 48842,
+  "target": "income > $50,000; trailing test-label dot removed",
+  "selection": "Combine UCI supplied train/test then seeded split; original person identifiers are unavailable, so row IDs identify records only. fnlwgt excluded because analysis is unweighted and it is a survey weight."
+}

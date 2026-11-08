@@ -1,0 +1,33 @@
+{
+  "scenario_id": "scenario_022",
+  "family": "real_support_sensitivity",
+  "dataset": "acs_income",
+  "model": "hgb",
+  "geometry": "calibration_heterogeneous",
+  "count_geometry": "uncapped_rounded",
+  "target_rule": "smallest_eligible",
+  "groups": 10,
+  "target_group": 0,
+  "target_original_group": 12,
+  "target_key": "sex=Female|race=Black|age=<40",
+  "target_n": 10,
+  "total_n": 1250,
+  "target_original_audit_n": 14,
+  "target_calibration_n": 10,
+  "target_template_reference": 0.19500671745699868,
+  "target_probability": 0.4450067174569987,
+  "injection_capped": false,
+  "target_true_delta": 0.25,
+  "effect_above_margin": 0.2,
+  "harmful_groups": 6,
+  "confirmation": 0.8,
+  "floor": 0.1,
+  "alpha": 0.05,
+  "margin": 0.05,
+  "eta": 1.2500000000000002e-05,
+  "planned_repetitions": 1000,
+  "seed": 20261024,
+  "seed_spawn_key": [
+    22
+  ]
+}

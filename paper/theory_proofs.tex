@@ -1,0 +1,206 @@
+\section{Proofs of the finite-sample results}\label{app:theory-proofs}
+
+The arguments below use fixed design counts. In the IID interpretation,
+they apply after legitimate conditioning on the target and reference
+positive counts. Independence across audit observations is assumed where
+concentration is invoked. No independence between the resulting family
+of p-values is required.
+
+\subsection{Fixed-prior risk and the screening boundary}
+
+\begin{proof}[Proof of Proposition~\ref{prop:theory-shrinkage}]
+Let $v=p(1-p)$. The posterior mean has bias
+$\kappa(\mu-p)/(n+\kappa)$ and variance $nv/(n+\kappa)^2$. Hence
+\begin{align*}
+ &R_\kappa(p)-R_0(p)\\
+ &\quad=\frac{nv+\kappa^2(p-\mu)^2}{(n+\kappa)^2}-\frac vn\\
+ &\quad=\frac{\kappa^2(p-\mu)^2+nv-v(n+\kappa)^2/n}{(n+\kappa)^2}\\
+ &\quad=\frac{\kappa^2(p-\mu)^2-(2\kappa+\kappa^2/n)v}
+ {(n+\kappa)^2},
+\end{align*}
+which proves Eq.~\eqref{eq:theory-risk}, including $p=0$ or $p=1$.
+The strict screening event satisfies
+\[
+ \widetilde p>t
+ \quad\Longleftrightarrow\quad
+ X>nt+\kappa(t-\mu).
+\]
+Since $X$ takes integer values, the smallest count that passes the screen is
+$\lfloor nt+\kappa(t-\mu)\rfloor+1$. This proves
+Eq.~\eqref{eq:theory-cutoff}. When $t>\mu$, the real threshold increases;
+the integer threshold cannot decrease but may remain unchanged. Under
+Eq.~\eqref{eq:theory-collapse}, the real threshold is at least $n$, making
+the strict event impossible. Conversely, if the inequality fails, $X=n$
+passes; thus the condition exactly characterizes collapse of the event
+over all possible counts.
+
+If $p=t+\varepsilon$, the shrunk event is $X>np+a$ with
+$a=\kappa(t-\mu)-n\varepsilon$. For $a>0$, Hoeffding's inequality gives
+\[
+ \begin{aligned}
+ \Pr_p(A_\kappa)&\le\Pr_p(X-np\ge a)\\
+ &\le e^{-2a^2/n}.
+ \end{aligned}
+\]
+For the raw screen,
+$A_0^c=\{X/n\le t\}=\{X/n-p\le-\varepsilon\}$, whose probability is at
+most $e^{-2n\varepsilon^2}$. These are the bounds in
+Eq.~\eqref{eq:theory-screen-bound}. If $\mu,\kappa$ were learned from
+independent data, the same argument holds after conditioning on those
+data, with the risk interpreted conditionally.
+\end{proof}
+
+For the constructive family, ordinary cells have $p=\mu\in(0,1)$, so
+Eq.~\eqref{eq:theory-risk} is strictly negative there. The risk difference
+for one exceptional cell is finite. Increasing the finite number of
+ordinary cells therefore makes the macro-average difference negative,
+while Eq.~\eqref{eq:theory-collapse} can still hold for the exceptional
+cell. In the numerical example, the ordinary-cell raw and shrunk risks
+are $0.009$ and $0.00009$. The exceptional-cell risks are $0.02275$ and
+$0.0508525$. Averaging over four ordinary cells and one exceptional cell gives
+$0.01175$ and $0.0102425$, respectively. The raw selection probability is
+the exact tail
+$1-\sum_{k=0}^2 {10\choose k}0.35^k0.65^{10-k}$, while
+$nt+\kappa(t-\mu)=2+9=11$ makes the shrunk event empty.
+
+\subsection{HB validity and standardized references}
+
+\begin{proof}[Proof of Proposition~\ref{prop:theory-hb}]
+Hoeffding's inequality for the independent, possibly heterogeneous
+reference observations gives
+\[
+ \Pr\left\{q-\widehat q>
+       \sqrt{\frac{\log(1/\eta)}{2m}}\right\}\le\eta.
+\]
+Clipping the endpoint at one preserves coverage because $q\le1$.
+Consequently, $E_q=\{q\le U_q\}$ has probability at least $1-\eta$.
+Under the null, let $\theta_0=\min\{1,q+\Delta\}$, so
+$p\le\theta_0$. On $E_q$, $\theta_0\le\theta_U$. Monotone binomial
+coupling implies $T_{\theta_0}(x)\le T_{\theta_U}(x)$ for every count $x$.
+
+For completeness, $T_{\theta_0}(X)$ is super-uniform under any
+$p\le\theta_0$. For any $v\in[0,1]$, the set
+$\{x:T_{\theta_0}(x)\le v\}$ is empty or an upper integer tail starting at
+some $k$. In the latter case,
+\[
+ \begin{aligned}
+ \Pr_p\{T_{\theta_0}(X)\le v\}&=\Pr_p(X\ge k)\\
+ &\le T_{\theta_0}(k)\le v.
+ \end{aligned}
+\]
+This includes degenerate binomial parameters.
+
+For $u<\eta$, $\{P_{\mathrm{HB}}\le u\}$ is empty. For
+$\eta\le u<1$, clipping at one does not change this event, and
+\[
+ \begin{aligned}
+ &\{P_{\mathrm{HB}}\le u\}\\
+ &\quad\subseteq E_q^c\ \cup\
+ \{T_{\theta_0}(X)\le u-\eta\}.
+ \end{aligned}
+\]
+The union bound gives a probability of at most $\eta+(u-\eta)=u$.
+The case $u=1$ is immediate. A p-value that is identically one for an unsupported
+comparison is also super-uniform. This proves the proposition. The
+argument does not condition the binomial law of $X$ on the random event
+$E_q$. Although target/reference independence holds in the stated audit
+design, this union-bound step itself requires only the binomial target
+marginal and the valid reference bound.
+\end{proof}
+
+For the standardized-reference extension, write observations from cell
+$h$ as $B_{hi}$, $i=1,\ldots,n_h$. Then
+$\widehat q=\sum_h\sum_i(\nu_h/n_h)B_{hi}$. The sum of squared ranges is
+$\sum_h n_h(\nu_h/n_h)^2=\sum_h\nu_h^2/n_h$. The weighted Hoeffding inequality therefore
+gives the stated upper radius for $q=\sum_h\nu_hp_h$. The preceding proof
+then applies unchanged. This argument requires $n_h>0$ whenever
+$\nu_h>0$; silently discarding unsupported reference cells would change
+the target and invalidate the argument.
+
+For Eq.~\eqref{eq:theory-hoeffding}, express $d$ as a sum of independent
+target observations with coefficient $1/n$ and reference observations
+with coefficient $-1/m$. The sum of squared ranges is $V=1/n+1/m$.
+If the difference between the average means satisfies $\delta\le\Delta$, then, for
+$x>0$,
+\[
+ \begin{aligned}
+ \Pr(d\ge\Delta+x)&\le\Pr(d-\delta\ge x)\\
+ &\le e^{-2x^2/V}.
+ \end{aligned}
+\]
+For $0<u<1$, the event $P_{\mathrm H}\le u$ implies
+$d\ge\Delta+\sqrt{(V/2)\log(1/u)}$ and has probability at most $u$.
+At $u=0$ it is empty, and at $u=1$ the assertion is automatic. This proves
+super-uniformity for heterogeneous rates on both sides.
+
+\subsection{Weighted Holm, the power envelope, and split cost}
+
+\begin{proof}[Proof of Proposition~\ref{prop:theory-holm}]
+Condition on the discovery data and the legitimate confirmation design. Weights
+are then fixed and strictly positive. Let $I_0$ be the true-null set. If
+it is empty, FWER is zero. Otherwise, let $W_0=\sum_{g\in I_0}w_g>0$.
+If the procedure rejects any true null, consider the first such
+hypothesis $g$ in the ordered sequence. All true nulls remain at its
+testing stage. Its remaining-weight denominator $R_g$ therefore satisfies
+$R_g\ge W_0$, and rejection implies
+\[
+ P_g\le\alpha w_g/R_g\le\alpha w_g/W_0.
+\]
+Taking a union over possible first true nulls and using conditional
+super-uniformity gives
+\[
+ \begin{aligned}
+ &\Pr(\text{any false flag}\mid D,\text{design})\\
+ &\quad\le\sum_{g\in I_0}\frac{\alpha w_g}{W_0}=\alpha.
+ \end{aligned}
+\]
+Each summand uses a threshold at most $\alpha\le1$. Averaging over the
+conditioning variables proves strong unconditional control. The argument does not use joint
+independence of p-values.
+
+For containment, suppose $P_g/w_g\le\alpha$. All preceding ratios are at
+most $\alpha$. At any such stage the remaining-weight sum is at most
+one, so the Holm ratio threshold is at least $\alpha$. The procedure
+reaches and rejects $g$, proving weighted-Bonferroni containment.
+\end{proof}
+
+To prove Eq.~\eqref{eq:theory-power-envelope}, again condition on
+discovery and the fixed design. With $P_{\mathrm H}$, the event
+$d_g\ge\Delta+b_g(w_g)$ implies $P_g\le\alpha w_g$, hence a weighted
+Holm rejection. Under $\delta_g=\Delta+\varepsilon_g$ and
+$\varepsilon_g>b_g(w_g)$, a lower-tail Hoeffding bound gives
+\[
+ \begin{aligned}
+ &\Pr\{d_g<\Delta+b_g(w_g)\}\\
+ &\quad\le\exp\left\{-\frac{2[\varepsilon_g-b_g(w_g)]^2}{V_g}\right\}.
+ \end{aligned}
+\]
+Taking the complementary probability proves the envelope. Since
+$w_g\ge\rho/G$, using the larger boundary $b_g(\rho/G)$ gives its
+score-independent version whenever that bound is nontrivial. Neither
+calculation asserts that HB has the same boundary or that a zero lower
+bound implies zero actual power.
+
+\begin{proof}[Proof of Corollary~\ref{cor:theory-split}]
+Exactly proportional allocation gives $n_C=cn_A$, $m_C=cm_A$, and hence
+$V_C=V_A/c$. The split and full-data sufficient boundaries satisfy
+\[
+ \begin{aligned}
+ b_C(w_g)^2&=\frac{V_A}{2c}\log\frac1{\alpha w_g},\\
+ b_A(1/G)^2&=\frac{V_A}{2}\log\frac G\alpha.
+ \end{aligned}
+\]
+Both boundaries are nonnegative. Comparing their squares and cancelling
+$V_A/2$ yields
+\[
+ \begin{aligned}
+ &b_C(w_g)<b_A(1/G)\\
+ &\quad\Longleftrightarrow\quad
+ \log\frac1{\alpha w_g}<c\log\frac G\alpha\\
+ &\quad\Longleftrightarrow\quad
+ w_g>\alpha^{c-1}G^{-c}.
+ \end{aligned}
+\]
+This proves the asserted equivalence solely for the specified sufficient
+boundaries.
+\end{proof}

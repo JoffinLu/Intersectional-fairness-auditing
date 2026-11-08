@@ -1,0 +1,138 @@
+{
+  "dataset": "diabetes",
+  "created_utc": "2026-10-22T19:09:27.940032+00:00",
+  "seed": 20261022,
+  "rows": 50000,
+  "positives": 4380,
+  "split_rows": {
+    "train": 30000,
+    "calibration": 10000,
+    "audit": 10000
+  },
+  "split_positive_n": {
+    "train": 2628,
+    "calibration": 876,
+    "audit": 876
+  },
+  "predictor_columns": [
+    "weight",
+    "admission_type_id",
+    "discharge_disposition_id",
+    "admission_source_id",
+    "time_in_hospital",
+    "payer_code",
+    "medical_specialty",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "diag_1",
+    "diag_2",
+    "diag_3",
+    "number_diagnoses",
+    "max_glu_serum",
+    "A1Cresult",
+    "metformin",
+    "repaglinide",
+    "nateglinide",
+    "chlorpropamide",
+    "glimepiride",
+    "acetohexamide",
+    "glipizide",
+    "glyburide",
+    "tolbutamide",
+    "pioglitazone",
+    "rosiglitazone",
+    "acarbose",
+    "miglitol",
+    "troglitazone",
+    "tolazamide",
+    "examide",
+    "citoglipton",
+    "insulin",
+    "glyburide-metformin",
+    "glipizide-metformin",
+    "glimepiride-pioglitazone",
+    "metformin-rosiglitazone",
+    "metformin-pioglitazone",
+    "change",
+    "diabetesMed"
+  ],
+  "excluded_sensitive_predictors": [
+    "sex/gender/SEX",
+    "race/RAC1P",
+    "age/AGEP"
+  ],
+  "group_levels": {
+    "sex": [
+      "Female",
+      "Male",
+      "Unknown/Invalid"
+    ],
+    "race": [
+      "AfricanAmerican",
+      "Asian",
+      "Caucasian",
+      "Hispanic",
+      "Other",
+      "Unknown"
+    ],
+    "age": [
+      "<40",
+      "40-69",
+      "70+"
+    ]
+  },
+  "group_count": 54,
+  "nonempty_audit_groups": 36,
+  "groups_with_audit_positives": 29,
+  "X_shape": [
+    50000,
+    931
+  ],
+  "X_nnz": 2199699,
+  "X_format": "CSR, transform fit on train only; row order matches main npz",
+  "group_n_definition": "Number of y=1 records in the group and relevant split (FNR denominator), not total group rows.",
+  "unit_split": "patient_nbr (deduplicated)",
+  "models": {
+    "lr": {
+      "threshold": 0.05605004164047855,
+      "threshold_rule": "calibration positive 20th-percentile order statistic, ties positive",
+      "fit_seconds": 1.560805800021626,
+      "audit_auc": 0.653956823190982,
+      "audit_accuracy": 0.4215,
+      "calibration_fnr": 0.1997716894977169,
+      "audit_fnr": 0.21232876712328766,
+      "hyperparameters": {
+        "C": 1.0,
+        "max_iter": 400,
+        "solver": "lbfgs"
+      }
+    },
+    "hgb": {
+      "threshold": 0.05894394683078142,
+      "threshold_rule": "calibration positive 20th-percentile order statistic, ties positive",
+      "fit_seconds": 1.6501933000108693,
+      "audit_auc": 0.6533233641417387,
+      "audit_accuracy": 0.414,
+      "calibration_fnr": 0.1997716894977169,
+      "audit_fnr": 0.2089041095890411,
+      "hyperparameters": {
+        "learning_rate": 0.08,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "max_depth": 5,
+        "min_samples_leaf": 30,
+        "l2_regularization": 1.0,
+        "early_stopping": false,
+        "categorical_max_categories": 32
+      }
+    }
+  },
+  "raw_records": 101766,
+  "eligible_records": 71518,
+  "target": "readmission <30 days; >30 and NO are negative",
+  "selection": "Select minimum encounter_id per patient_nbr, then seeded uniform cap of 50,000 patients. Minimum encounter ID is a deterministic choice, not verified chronological ordering. Prediction is at discharge; discharge disposition and in-hospital treatments are included. No clinical utility or prospective deployment claim."
+}

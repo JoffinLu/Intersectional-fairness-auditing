@@ -1,0 +1,18 @@
+{
+  "mode": "ablation",
+  "started_seed": 20261023,
+  "completed_at": "2026-10-22T23:14:05+08:00",
+  "elapsed_seconds": 4.954612799978349,
+  "repetitions": 1000,
+  "baseline_repetitions": 0,
+  "configs": 24,
+  "code_sha256": {
+    "run_extended.py": "909c4143d7c817e05ebc135922725156acebf998e19da18a3ec85de9facbec57",
+    "run_simulation.py": "759b06285a5e8bcfcfc8b6fff4775d3975afe15e374a6c1d700ebff66d9a05da",
+    "audit_methods.py": "3b6e6de694b421edc0bb63756966d930f17880777bec6092d19d59cf4b83b5e0",
+    "sr_adapter.py": "9a596df5b430176f35c9a46a0d56c4379d2beb070042cd56d35d3a9dab2d07c5",
+    "suremap_adapter.py": "ec40e62a4da7b821abd74f18f7de274ed3c30fb7d0603a50bc44a1fa8dded043"
+  },
+  "scope": "known independent Bernoulli semi-synthetic losses, not real population truths",
+  "gpu_hours": 0
+}

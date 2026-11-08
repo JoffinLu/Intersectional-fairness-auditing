@@ -1,0 +1,13 @@
+{
+  "scenario_id": "scenario_015",
+  "family": "real_support_semisynthetic",
+  "dataset": "acs_employment",
+  "model": "hgb",
+  "geometry": "calibration_heterogeneous",
+  "groups": 19,
+  "target_n": 10,
+  "effect_above_margin": 0.2,
+  "target_group": 0,
+  "confirmation": 0.8,
+  "floor": 0.1
+}

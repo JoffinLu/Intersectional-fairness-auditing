@@ -1,0 +1,33 @@
+{
+  "scenario_id": "scenario_030",
+  "family": "real_support_sensitivity",
+  "dataset": "acs_employment",
+  "model": "hgb",
+  "geometry": "calibration_heterogeneous",
+  "count_geometry": "uncapped_rounded",
+  "target_rule": "smallest_eligible",
+  "groups": 19,
+  "target_group": 0,
+  "target_original_group": 10,
+  "target_key": "sex=Female|race=Asian|age=40-69",
+  "target_n": 10,
+  "total_n": 3810,
+  "target_original_audit_n": 10,
+  "target_calibration_n": 16,
+  "target_template_reference": 0.19771161709835144,
+  "target_probability": 0.44771161709835144,
+  "injection_capped": false,
+  "target_true_delta": 0.25,
+  "effect_above_margin": 0.2,
+  "harmful_groups": 10,
+  "confirmation": 0.8,
+  "floor": 0.1,
+  "alpha": 0.05,
+  "margin": 0.05,
+  "eta": 6.578947368421054e-06,
+  "planned_repetitions": 1000,
+  "seed": 20261024,
+  "seed_spawn_key": [
+    30
+  ]
+}

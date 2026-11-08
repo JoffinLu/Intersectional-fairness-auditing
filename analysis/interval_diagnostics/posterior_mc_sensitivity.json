@@ -1,0 +1,51 @@
+[
+  {
+    "scenario": 0,
+    "repetitions": 20,
+    "max_endpoint_difference": 0.013705865755485158,
+    "target_tolerance_decisions_changed": 0,
+    "family_tolerance_decisions_changed": 0
+  },
+  {
+    "scenario": 1,
+    "repetitions": 20,
+    "max_endpoint_difference": 0.01607499212881719,
+    "target_tolerance_decisions_changed": 0,
+    "family_tolerance_decisions_changed": 0
+  },
+  {
+    "scenario": 2,
+    "repetitions": 20,
+    "max_endpoint_difference": 0.015901304588630427,
+    "target_tolerance_decisions_changed": 0,
+    "family_tolerance_decisions_changed": 0
+  },
+  {
+    "scenario": 3,
+    "repetitions": 20,
+    "max_endpoint_difference": 0.015595249528752464,
+    "target_tolerance_decisions_changed": 0,
+    "family_tolerance_decisions_changed": 0
+  },
+  {
+    "scenario": 4,
+    "repetitions": 20,
+    "max_endpoint_difference": 0.018886488768826815,
+    "target_tolerance_decisions_changed": 0,
+    "family_tolerance_decisions_changed": 3
+  },
+  {
+    "scenario": 5,
+    "repetitions": 20,
+    "max_endpoint_difference": 0.01761389538693614,
+    "target_tolerance_decisions_changed": 0,
+    "family_tolerance_decisions_changed": 0
+  },
+  {
+    "scenario": 6,
+    "repetitions": 20,
+    "max_endpoint_difference": 0.012474818647366298,
+    "target_tolerance_decisions_changed": 0,
+    "family_tolerance_decisions_changed": 0
+  }
+]
