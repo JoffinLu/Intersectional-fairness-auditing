@@ -17,4 +17,6 @@
 *.npz binary
 *.pdf binary
 *.png binary
+*.ttf binary
+*.svg -text
 *.zip binary

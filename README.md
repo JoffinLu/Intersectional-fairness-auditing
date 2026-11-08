@@ -13,6 +13,12 @@ error does not by itself establish better detection of a particular harmful
 subgroup. See the manuscript, including the complete proofs and supplementary
 tables in its appendices, in `paper/`.
 
+The five figures share a white-canvas Warm ML style, Nunito typography, pastel
+markers and darker semantic colors. Vector PDF, editable SVG and 600-dpi PNG
+exports are in `figures/`; their numerical source tables remain in `figure_data/`.
+
+![Overview of the five manuscript figures](figures/overview.png)
+
 ## Repository contents
 
 - `src/`: inference, estimators, experiment generation, numerical analysis and plotting.
@@ -20,6 +26,7 @@ tables in its appendices, in `paper/`.
   scenario definitions, complete summaries, and run metadata.
 - `analysis/`: numerical summaries and the exploratory interval diagnostic.
 - `figure_data/`: the plotted values for the five manuscript figures.
+- `figures/`: the final, consistently styled PDF/SVG/PNG figures.
 - `data/processed/`: aggregate group counts and dataset/model metadata only.
 - `data/raw/download_manifest.json`: official raw-data locations and recorded hashes.
 - `protocols/`: support-sensitivity and exploratory interval specifications.
@@ -42,7 +49,8 @@ python -m pip install -r requirements_figures.txt
 ```
 
 `requirements_figures.txt` includes the numerical dependencies, PyMuPDF and
-Windows timezone data. Figure scripts use Arial when available; a font fallback
+Windows timezone data. The final figure entry point uses the bundled Nunito
+font. Historical plotting helpers use Arial when available; their font fallback
 can change the layout but does not change the numerical results.
 
 Run the inference checks with:
@@ -78,15 +86,17 @@ it does not require downloading individual-level records or refitting classifier
 ```bash
 python src/analyze_experiments.py
 python src/summarize_point_controls.py
-python src/make_paper_assets.py
-python src/plot_publication_figures.py
-python src/plot_fig3_readable.py
+python src/plot_warm_ml_figures.py
 ```
 
-Run the plotting scripts in the order shown: `plot_fig3_readable.py` provides
-the final six-panel Figure 3. The drawing scripts export PDF, editable SVG and
-PNG files. Historical styling and numerical-analysis helpers may create
-intermediate figures before the final figure scripts replace them.
+The last command is the authoritative figure entry point. It reads all five
+frozen `figure_data/` tables, preserves every estimate and uncertainty endpoint,
+and exports all figures at the Sage manuscript's 174 mm width. Figure 3 retains
+its six-panel absolute-rate and paired-contrast layout. The bundled Nunito font
+is licensed under the SIL Open Font License; local font caches are ignored.
+The older plotting scripts are retained as historical helpers and reproduce
+the earlier visual style. Do not run them after the final figure entry point
+unless intentionally restoring that style.
 
 The delivered LaTeX tables include publication edits. Regeneration helpers
 recover their numerical contents; preserve or reapply the journal formatting

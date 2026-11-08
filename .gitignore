@@ -4,6 +4,7 @@ venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.cache/
 
 # Downloaded public records and regenerated individual-level caches
 /data/raw/*.zip
@@ -27,6 +28,8 @@ __pycache__/
 *.fls
 *.fdb_latexmk
 /build/
+/figures/qa/
+/figures/*_preview.png
 .aris/
 .agents/
 .codex/

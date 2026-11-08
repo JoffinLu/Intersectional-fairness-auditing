@@ -22,7 +22,15 @@ unchanged from the official Sage LaTeX template. The template's own notice
 restricts its use to preparation of articles for Sage journals. Those terms
 remain applicable; the files are included for this journal submission.
 
-## Data
+## Nunito figure font
+
+`vendor/Nunito/Nunito-Variable.ttf` is the Nunito variable font from
+[Google Fonts](https://github.com/google/fonts/tree/main/ofl/nunito).
+The SIL Open Font License 1.1 is retained in `vendor/Nunito/OFL.txt`.
+Local static weight instances are generated into an ignored cache for plotting;
+the authoritative variable font is distributed unchanged.
+
+## Data sources
 
 Public source datasets are downloaded from UCI and the US Census Bureau.
 Their attribution, source URLs and recorded SHA256 values are documented in

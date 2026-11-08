@@ -1,0 +1,74 @@
+{
+  "style": "Warm ML; white canvas and panels; Nunito; pastel markers with dark edges",
+  "width_mm": 174,
+  "backend": "Matplotlib",
+  "matplotlib_version": "3.11.2",
+  "new_experiments": false,
+  "source_data_unchanged": true,
+  "source_data_sha256": {
+    "figure_data/Fig1_data.csv": "8596817a46eac1ada14b53d8294746b15c1c24fbbffba3fd6b78b282b0592100",
+    "figure_data/Fig2_data.csv": "98ee8c28a09eb0a7403fb6f5fd9f7f66927e451fc0e80d20be96122b22accb97",
+    "figure_data/Fig3_data.csv": "182d76ca54eed9646ce2a651cb47b7081e21ce3678a6119f3c299694012df4c2",
+    "figure_data/Fig4_data.csv": "90276228f4e9d220c8f1f2fb7277b9336537fd3c4c4638e845698a0865c0d13f",
+    "figure_data/Fig5_data.csv": "b860f17637d0b7da4833c3df6c436c06d9cb6738b4ae9012d57c89ddf5d816ad"
+  },
+  "colors": {
+    "raw": "#707B8B",
+    "shrink": "#238F80",
+    "eb": "#238F80",
+    "sr": "#8971B3",
+    "suremap": "#4D85AA",
+    "full": "#4D85AA",
+    "conflict": "#CD626F",
+    "split_raw": "#707B8B",
+    "split_eb": "#238F80",
+    "difference": "#CD626F",
+    "heat_negative": "#DC929A",
+    "heat_zero": "#FFFFFF",
+    "heat_positive": "#8DC4B4"
+  },
+  "fills": {
+    "raw": "#D8DEE7",
+    "shrink": "#C8E6DF",
+    "eb": "#C8E6DF",
+    "sr": "#E1BEE7",
+    "suremap": "#BBDEFB",
+    "full": "#BBDEFB",
+    "conflict": "#FFD0D0",
+    "split_raw": "#D8DEE7",
+    "split_eb": "#C8E6DF",
+    "difference": "#FFD0D0",
+    "heat_negative": "#FFD0D0",
+    "heat_zero": "#FFFFFF",
+    "heat_positive": "#C8E6DF"
+  },
+  "font_sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+  "uncertainty": "Retained original pointwise Monte Carlo intervals and paired contrasts.",
+  "exports_sha256": {
+    "Fig1": {
+      "pdf": "a148078035e31c264cf99468512b9293a8ae4ec51e86b9ea63dd46a37f41ccf9",
+      "svg": "5ac8175b9e9007276150c0df72e9f751987b43039c2e0464bbd884930b5a4ace",
+      "png": "f5358fdccb55833c663758f79016c5e4c3d14507193bdcb1d916c5728369d239"
+    },
+    "Fig2": {
+      "pdf": "6623e9f90dd6e41a06bac44fe8360a98cc9fc1d53212070c433f63a880c114be",
+      "svg": "60f28fba6cbc04361f542a9526de39405616727494b2463190d38e0efa5e4edd",
+      "png": "9a8a83d12ff9195a72331b834bb4d671d280f96ccc84e14c81ec4593957d4a6d"
+    },
+    "Fig3": {
+      "pdf": "f4b09ea489f5bff698a83b30253f1d5e01a67613887e4c14d7c4b0896aca6642",
+      "svg": "9228101bc5107ee4d1a24f704a76dc8ffb767b19eb6db14ea8ccf40a0c57296e",
+      "png": "676d7ae06adeaa669f35d34ca979873395f6da42b7c9bc36277da41c45d2c9fc"
+    },
+    "Fig4": {
+      "pdf": "e14bcf5488de46ee8abad99d21550503c13e7eb9b30fe6a86299c223df714623",
+      "svg": "75cffcbd7de5356b0c28a7794648a95cee56e38daae690a966e0db223a78d51a",
+      "png": "b0f1e1263d5f919d6256c2db459e59cc56b679e57354c9d43f4ef102bb609d47"
+    },
+    "Fig5": {
+      "pdf": "7513c8e2b150c204de396dfbe07ba1c1b1a57ef392ae16bd201704efc183edb9",
+      "svg": "d23f09f2f3e31eb406f20a30b381c3dda614d7a3010fdf57fd68e15843ef1d68",
+      "png": "509b1a8defdd6f2d27ea3bca37fc3a9103f984d75c2c50a6ada5c717ba15d754"
+    }
+  }
+}

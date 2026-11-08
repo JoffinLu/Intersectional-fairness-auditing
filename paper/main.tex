@@ -10,6 +10,7 @@
 \newcommand{\E}{\mathbb{E}}
 \newcommand{\Prb}{\mathbb{P}}
 \setlength{\tabcolsep}{3pt}
+\setlength{\dblfloatsep}{6pt}
 \newif\ifreviewcopy
 \ifdefined\AnonymousReview\reviewcopytrue\else\reviewcopyfalse\fi
 \def\journalname{The European Journal on Artificial Intelligence}
@@ -20,7 +21,7 @@
 \setlength{\@fpsep}{14pt}
 \setlength{\@fpbot}{0pt plus 1fil}
 \setlength{\@dblfptop}{0pt}
-\setlength{\@dblfpsep}{14pt}
+\setlength{\@dblfpsep}{6pt}
 \setlength{\@dblfpbot}{0pt plus 1fil}
 \def\ps@sagepage{%
   \let\@mkboth\@gobbletwo
@@ -153,7 +154,7 @@ This finding concerns plug-in decisions and estimation objectives, not calibrate
 The sensitivity comparison also has a false-alert cost. In the same $G=32$, $n_*=20$, $\varepsilon=.10$ setting, the frequency of screening at least one truly nonharmful cell was 99.2\% for raw estimates, 3.3\% for SR, and 11.7\% for SureMap. These are familywise false-screen frequencies for an uncalibrated rule, not nominal-level FWER guarantees. Thus the higher raw target sensitivity does not establish a better overall decision rule. Additional point-screen diagnostics cover all seven fitted-estimator settings for these three estimators, including null and additive controls and target-risk MCSEs. This additional summary reuses retained outputs and provides no comparison of the original interval procedures.
 
 \begin{figure*}[t]\centering
-\includegraphics[width=0.94\linewidth]{Fig2.pdf}
+\includegraphics[width=\linewidth]{Fig2.pdf}
 \caption{Lower macro risk can accompany less frequent harmed-cell screening. Four prespecified synthetic settings use $G=32$, target positive count $n$, and excess disparity $\varepsilon$ above the .05 tolerance; each tick gives $n$ above $\varepsilon$. Bars show $1.96$ Monte Carlo standard errors for mean squared error (MSE) in (a) and pointwise 95\% Wilson Monte Carlo intervals for screen probabilities in (b), from 120 paired repetitions. EB denotes empirical Bayes and SR denotes the structured-regression point adapter; the screens are uncalibrated, so panel (b) is not a frequentist power comparison}\label{fig:estimators}
 \end{figure*}
 \input{table_estimators}
@@ -241,6 +242,8 @@ We quantified a finite-sample mechanism through which sharing improves average s
 
 \bibliographystyle{SageH}
 \begingroup
+\setlength{\bibsep}{0pt}
+\renewcommand{\bibfont}{\fontsize{9}{11.7pt}\selectfont}
 \let\originalthebibliography\thebibliography
 \def\thebibliography#1{\originalthebibliography{#1}\raggedright}
 \bibliography{references}
