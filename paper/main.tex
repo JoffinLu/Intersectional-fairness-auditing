@@ -76,6 +76,8 @@ SR uses inverse-variance weighted Lasso with an unpenalized intercept and struct
 \subsection{Statistical evidence for fairness violations}
 Cherian and Cand\`es develop bootstrap-based fairness audits with asymptotic simultaneous certification guarantees and false-discovery-rate control for flagging under their stated conditions~\citep{cherian2024statistical}. Their framework shows why uncertainty and multiplicity are central to auditing. Size-adaptive fairness testing (SAFT) uses asymptotic inference for larger groups and Dirichlet--multinomial posterior inference for smaller groups~\citep{ferrara2025saft}. Single-cell posterior smoothing is different from cross-group shrinkage, and posterior tail probabilities should not automatically be interpreted as frequentist p-values. We include a local conditional Dirichlet mean as a point diagnostic, not a reproduction of the complete SAFT procedure. Our analysis does not reproduce the original SR intervals or Cherian--Cand\`es bootstrap decisions. An exploratory interval analysis implements the published SAFT interval ingredients with an explicit adaptation for conditional FNR; its tolerance rule is distinct from the original two-sided zero-parity test. The empirical claims concern the implemented estimators, intervals, and confirmation rules.
 
+FairCert combines Clopper--Pearson intervals with Bonferroni correction for finite-sample bounds on between-group false-positive-rate and true-positive-rate gaps~\citep{sikder2026faircert}. Our exact-binomial comparator projects a simultaneous rate rectangle onto count-weighted group--complement FNR contrasts and uses a lower endpoint above tolerance to declare a violation.
+
 The preprint by \citet{tang2026tolerance} (version 1, 1 October 2026) distinguishes tolerance-based violation certification from sensitivity-oriented screening using empirical likelihood. Its asymptotic calibration and reference assumptions differ from the fixed-count heterogeneous-complement construction here. We do not claim to introduce tolerance-based fairness auditing or the distinction between false declarations and missed violations.
 
 \subsection{Independent weighting and confirmation}
@@ -137,7 +139,7 @@ Familywise error rate (FWER) is the probability of at least one flag among the c
 
 For repetition-level quantities, Monte Carlo (MC) standard errors (MCSEs) are sample standard deviations divided by the square root of the number of repetitions. Power differences use the within-repetition difference, preserving pairing. Plot bars are $1.96$ MCSE unless otherwise stated. These summaries describe simulation error; they are not uncertainty intervals for an original population's fairness. Wilson intervals~\citep{wilson1927probable} remain informative when zero false flags are observed. The reported maxima are selected across the fixed grid; their pointwise intervals are not simultaneous confidence bounds. Counts of grid-level wins are descriptive, not multiplicity-adjusted tests of dominance. With 120 repetitions, pointwise 95\% Wilson intervals for probabilities observed as 0/120 and 120/120 are [0, .0310] and [.9690, 1], respectively; zero sample MCSE does not remove this simulation uncertainty. Displayed decimals use round-to-nearest formatting with ties to even, and unrounded values remain in the machine-readable outputs.
 
-The main random seed is 20261022, with independent SeedSequence child streams by configuration; extended runs use seed 20261023 and a deterministic sequential generator. We retain generated counts, probabilities, weights, estimates, decisions, scenario definitions, and run-time/source-hash metadata. All computations use CPU only. Figures were generated with Matplotlib and exported as vector PDFs. Generative AI assistance was used for literature retrieval, code development and checking, statistical derivation, analysis, and manuscript drafting. The authors retain responsibility for the scientific claims, verification of results, and final text.
+The main random seed is 20261022, with independent SeedSequence child streams by configuration; extended runs use seed 20261023 and a deterministic sequential generator. We retain generated counts, probabilities, weights, estimates, decisions, scenario definitions, and run-time/source-hash metadata. All computations use CPU only. Figures were generated with Matplotlib and exported as vector PDFs.
 
 \section{Results}\label{sec:results}
 \subsection{Lower estimation risk can coexist with suppressed screens}
@@ -219,6 +221,9 @@ Finally, a statistical FNR disparity is not a complete account of harmful treatm
 \section{Conclusion}
 We quantified a finite-sample mechanism through which sharing improves average subgroup estimation while suppressing an isolated harmful deviation in a threshold screen. Fitted SR and SureMap point estimates exhibited this separation in prespecified sparse settings, without establishing failure of their original inference procedures. Independently weighted confirmation controls false flags under the stated assumptions, but its gains depend on overcoming a data-splitting cost; the tested conflict score showed no consistent improvement over raw weighting. Sparse real-support cells retained low absolute power. An intersectional audit should therefore report estimation quality, local support, screening behavior, and calibrated evidence as separate quantities.
 
+\section*{Acknowledgements}
+OpenAI Codex assisted with literature retrieval, code development and checking, statistical derivation, analysis, figure preparation, and manuscript drafting and editing. The authors retain responsibility for the scientific claims, verification of results, and final text.
+
 \section*{Statements and declarations}
 \ifreviewcopy
 \textbf{Data and code availability.} The reproducibility repository is identified in the separate title page. It contains source code, aggregate support statistics, simulated audit outcomes, and figure data. Original individual-level public datasets must be obtained from their original providers. Generated error probabilities are simulation parameters, not population ground truth.
@@ -234,11 +239,9 @@ We quantified a finite-sample mechanism through which sharing improves average s
 
 \textbf{Declaration of conflicting interests.} The authors declared no potential conflicts of interest with respect to the research, authorship, or publication of this article.
 
-\textbf{Ethical considerations.} This study uses publicly released, de-identified secondary datasets and simulated outcomes. No participants were recruited and no interventions were conducted. Original data-use conditions remain applicable.
+\textbf{Ethical considerations.} Ethical review was not required for this study, as confirmed by the authors' institution. The study uses publicly released, de-identified secondary datasets and simulated outcomes, without participant recruitment or intervention. Original data-use conditions remain applicable.
 
 \textbf{Consent to participate and for publication.} Not applicable to this secondary-data and simulation study; no identifiable individual records are published.
-
-\textbf{Generative AI assistance.} OpenAI Codex assisted with literature retrieval, code development and checking, statistical derivation, analysis, figure preparation, and manuscript drafting and editing. The authors retain responsibility for the scientific claims, verification of results, and final text.
 
 \bibliographystyle{SageH}
 \begingroup

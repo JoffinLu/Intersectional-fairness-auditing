@@ -353,13 +353,13 @@
     },
     {
       "path": "paper/main.pdf",
-      "bytes": 501680,
-      "sha256": "718be314ebde1e03fb38ce721b906c6b317614956ef21f531a130048846354db"
+      "bytes": 502032,
+      "sha256": "a09ef8e92a6a8b6389ad7ea1a79124cf22e5a8aa22278e155f255907124ab6f7"
     },
     {
       "path": "paper/main.tex",
-      "bytes": 53018,
-      "sha256": "ecf50806de3b2064656c4171fa38a6bc58437c75df46875d6e925654719eb049"
+      "bytes": 53207,
+      "sha256": "2a854dc0fbd6bf89c6b67e95d68b8a1c27bdb7b899373cec8826487777708abc"
     },
     {
       "path": "paper/manuscript_review.tex",
@@ -373,8 +373,8 @@
     },
     {
       "path": "paper/references.bib",
-      "bytes": 8631,
-      "sha256": "a1aa5d42f50e49ed110bd879785f69bf33f730785c97ef429f017f9fed577fee"
+      "bytes": 9066,
+      "sha256": "40fee310245d6752156c9ae8587852f68315ff2b1064cee36847f504b61a68f1"
     },
     {
       "path": "paper/sagej.cls",
@@ -438,8 +438,8 @@
     },
     {
       "path": "paper/title_page.tex",
-      "bytes": 3091,
-      "sha256": "8e2c330ab1e7030d16301e6ad8802e7de11ddbd64af78e11f4a6be452a4e77ea"
+      "bytes": 3121,
+      "sha256": "b891a9156af8f4b55be2870a6545339dad3d683aca299933c06e5a1c63b6fa7d"
     },
     {
       "path": "protocols/interval_diagnostics.json",
