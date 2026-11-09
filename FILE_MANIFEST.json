@@ -354,12 +354,12 @@
     {
       "path": "paper/main.pdf",
       "bytes": 502032,
-      "sha256": "a09ef8e92a6a8b6389ad7ea1a79124cf22e5a8aa22278e155f255907124ab6f7"
+      "sha256": "904e2427dfee9707de3e5e8161a9e168503fbb792885a2b25b19534c104c03a3"
     },
     {
       "path": "paper/main.tex",
-      "bytes": 53207,
-      "sha256": "2a854dc0fbd6bf89c6b67e95d68b8a1c27bdb7b899373cec8826487777708abc"
+      "bytes": 53562,
+      "sha256": "78e0ac3af9c4fef98a686fff9ce102c9e64890219023673223dd2b2c42ce151f"
     },
     {
       "path": "paper/manuscript_review.tex",

@@ -141,6 +141,10 @@ For repetition-level quantities, Monte Carlo (MC) standard errors (MCSEs) are sa
 
 The main random seed is 20261022, with independent SeedSequence child streams by configuration; extended runs use seed 20261023 and a deterministic sequential generator. We retain generated counts, probabilities, weights, estimates, decisions, scenario definitions, and run-time/source-hash metadata. All computations use CPU only. Figures were generated with Matplotlib and exported as vector PDFs.
 
+\ifreviewcopy
+\textbf{Computational assistance.} OpenAI Codex assisted with literature retrieval, code development and checking, statistical derivation, analysis, figure preparation, and manuscript drafting and editing. The authors retain responsibility for the scientific claims, verification of results, and final text.
+\else\fi
+
 \section{Results}\label{sec:results}
 \subsection{Lower estimation risk can coexist with suppressed screens}
 Figure~\ref{fig:exact} displays the exact fixed-prior calculation. With five count-ten cells, four ordinary rates .1, one exceptional rate .35, center .1, oracle reference .1, and tolerance .1, concentration 90 reduces macro MSE from .01175 to .0102425. The exceptional-cell raw screen probability is .7383926086; the shrunk screen probability is zero. These numbers follow from finite-binomial risks and tails, without Monte Carlo error. The deliberately strong fixed prior illustrates existence and the decision boundary; it is not an estimate of the strength selected by SR or SureMap.
@@ -221,8 +225,10 @@ Finally, a statistical FNR disparity is not a complete account of harmful treatm
 \section{Conclusion}
 We quantified a finite-sample mechanism through which sharing improves average subgroup estimation while suppressing an isolated harmful deviation in a threshold screen. Fitted SR and SureMap point estimates exhibited this separation in prespecified sparse settings, without establishing failure of their original inference procedures. Independently weighted confirmation controls false flags under the stated assumptions, but its gains depend on overcoming a data-splitting cost; the tested conflict score showed no consistent improvement over raw weighting. Sparse real-support cells retained low absolute power. An intersectional audit should therefore report estimation quality, local support, screening behavior, and calibrated evidence as separate quantities.
 
+\ifreviewcopy\else
 \section*{Acknowledgements}
 OpenAI Codex assisted with literature retrieval, code development and checking, statistical derivation, analysis, figure preparation, and manuscript drafting and editing. The authors retain responsibility for the scientific claims, verification of results, and final text.
+\fi
 
 \section*{Statements and declarations}
 \ifreviewcopy
